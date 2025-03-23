@@ -1,15 +1,13 @@
 # prompt_engine.py
-
 def build_zone_prompt(dataset_name, df):
     sample = df.head(10).to_string(index=False)
     return f"""
-You are an intelligent environmental agent operating in Biosphere 2.
-You are now inside the zone: **{dataset_name}**.
-
-Here is a preview of current sensor readings in this zone:
+You are a digital scientist managing Biosphere 2 zone: {dataset_name}.
+Here is sample sensor data:
 {sample}
 
-Based on the data above, what balancing actions or insights should you generate to maintain optimal conditions in this zone?
-
-List actionable recommendations as if you are managing this system.
+Analyze this data and suggest:
+- Any environmental imbalance
+- Possible corrections
+- Scientific insights or anomalies
 """

@@ -1,4 +1,4 @@
-DateTime,GlobalRad_1m_W_per_m2,GlobalRad_3m_W_per_m2,GlobalRad_7m_W_per_m2,GlobalRad_13m_W_per_m2
+datetime,globalrad_1m[w/m^2],globalrad_3m[w/m^2],globalrad_7m[w/m^2],globalrad_13m[w/m^2]
 2025-02-01 00:00:00,-5.197448,-5.526193,-5.197448,-5.197448
 2025-02-01 00:15:00,-5.36182,-5.033075,-5.526193,-5.526193
 2025-02-01 00:30:00,-5.526193,-5.526193,-5.197448,-5.197448

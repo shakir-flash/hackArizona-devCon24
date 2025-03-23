@@ -1,4 +1,4 @@
-DateTime,Ux_m_per_s,Uy_m_per_s,Uz_m_per_s,Sound_m_per_s
+datetime,ux(m/s),uy(m/s),uz(m/s),sound(m/s)
 2025-02-01 00:00:00,0,0,0,0
 2025-02-01 00:15:00,0,0,0,0
 2025-02-01 00:30:00,0,0,0,0
