@@ -11,6 +11,18 @@ from ml_utils_simple import train_and_predict
 st.set_page_config("B2Twin - Digital Twin Navigator", layout="wide")
 st.title("🌿 B2Twin - AI-Powered Ecosystem Insight Agent")
 
+# Header-level link to second Streamlit app
+st.markdown(
+    """
+    <div style='margin-top:-15px; font-size:16px;'>
+        🔗 <a href="https://devcon4-team25-1.streamlit.app/" target="_blank" style="text-decoration:none; color:#0072C6; font-weight:bold;">
+        👉 Launch Conversational AI - Sequential Agent
+        </a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
 # Load datasets
 if "datasets" not in st.session_state:
     st.session_state.datasets = load_zone_datasets(DATA_DIR)
