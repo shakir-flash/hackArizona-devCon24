@@ -4,7 +4,7 @@ import requests
 import plotly.express as px
 
 # Import constants from constants.py
-from constants import OLLAMA_URL, MODEL_NAME, REQUEST_TIMEOUT
+from constants import OLLAMA_URL, MODEL_NAME
 
 # -------------------------
 # HELPER FUNCTIONS
@@ -66,7 +66,7 @@ def query_llm(prompt: str) -> str:
         response = requests.post(
             OLLAMA_URL,
             json={"model": MODEL_NAME, "prompt": prompt, "stream": False},
-            timeout=REQUEST_TIMEOUT
+            timeout=  300
         )
         return response.json().get("response", "⚠️ No response from LLM.")
     except Exception as e:
