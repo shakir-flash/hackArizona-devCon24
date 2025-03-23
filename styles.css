@@ -1,61 +1,26 @@
-/* Make the entire body a full-height flex container */
-html, body, [data-testid="stAppViewContainer"], .main {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
+/* styles.css */
 
+/* Basic dark theme styling for Streamlit */
 body {
     background-color: #121212;
+    color: #ffffff;
     font-family: sans-serif;
 }
 
-/* The main chat area */
-#chat-container {
-    padding: 1rem;
-    overflow-y: auto;
-    margin-bottom: 150px; /* Space for the fixed footer */
-    /* If you want it to fill all available vertical space: */
-    height: calc(100vh - 100px); 
-    /* Adjust as needed based on your top bar and title height. */
-}
-
-/* Each message row */
-.chat-message {
-    max-width: 60%;
-    border-radius: 8px;
-    padding: 10px;
-    color: #fff;
-    margin: 10px 0;
-    line-height: 1.4;
-    font-size: 1rem;
-}
-
-/* Right-aligned user messages */
-.user-message {
-    align-self: flex-end;
-    background-color: #1565C0;
-    margin-left: auto;
-}
-
-/* Left-aligned AI messages */
-.ai-message {
-    align-self: flex-start;
-    background-color: #424242;
-    margin-right: auto;
-}
-
-/* Show file name above the user message */
-.filename-display {
-    font-size: 0.85rem;
-    font-style: italic;
-    color: #ccc;
-    margin-bottom: 4px;
-}
-
-/* Dark theme for headings, etc. */
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
 
-/* The fixed footer for the prompt input */
+.sidebar .sidebar-content {
+    background-color: #1e1e1e;
+}
+
+.stTextArea textarea {
+    background-color: #2b2b2b !important;
+    color: #ffffff !important;
+}
+
+.stButton button {
+    background-color: #1565C0 !important;
+    color: #ffffff !important;
+}
