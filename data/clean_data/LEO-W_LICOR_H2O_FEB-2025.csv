@@ -1,4 +1,4 @@
-DateTime,H2O_in_mmol_per_mol,H2O_out_mmol_per_mol
+datetime,h2o_in(mmol/mol),h2o_out(mmol/mol)
 2025-02-01 01:56:38,9.588,
 2025-02-01 01:58:54,,9.919
 2025-02-01 03:56:37,11.14,
